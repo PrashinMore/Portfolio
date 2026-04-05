@@ -23,6 +23,9 @@ export const SOCIAL = {
   saasDemo: "https://www.ezcommerse.com/dashboard",
 } as const;
 
+/** India +91 9324115782 — floating CTA */
+export const WHATSAPP_CHAT_URL = `https://wa.me/919324115782?text=${encodeURIComponent("Hi Prashin, I'd like to connect.")}`;
+
 export const ABOUT = {
   summary: [
     "I am a backend-heavy full-stack engineer with 5+ years shipping production systems across fintech, telecom, and SaaS. I own architecture decisions end to end—from service boundaries and data models to CI/CD, observability, and on-call readiness.",

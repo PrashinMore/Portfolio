@@ -3,6 +3,7 @@ import { JetBrains_Mono, Plus_Jakarta_Sans } from "next/font/google";
 import { CursorGlow } from "@/components/layout/CursorGlow";
 import { PageLoader } from "@/components/layout/PageLoader";
 import { ScrollProgress } from "@/components/layout/ScrollProgress";
+import { WhatsAppFloat } from "@/components/layout/WhatsAppFloat";
 import { SITE } from "@/lib/constants";
 import "./globals.css";
 
@@ -76,6 +77,7 @@ export default function RootLayout({
         <PageLoader />
         <ScrollProgress />
         <CursorGlow />
+        <WhatsAppFloat />
         {children}
       </body>
     </html>
