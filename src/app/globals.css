@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+:root {
+  --bg-deep: #030014;
+  --bg-elevated: #0b0620;
+  --foreground: #f4f4f8;
+  --muted: #94a3b8;
+  --accent: #8b5cf6;
+  --accent-2: #6366f1;
+  --glow: rgba(139, 92, 246, 0.35);
+}
+
+@theme inline {
+  --color-background: var(--bg-deep);
+  --color-foreground: var(--foreground);
+  --font-family-mono: var(--font-mono), ui-monospace, SFMono-Regular, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-deep);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+::selection {
+  background: rgba(139, 92, 246, 0.35);
+  color: #fff;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-strong {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #a78bfa 0%, #818cf8 45%, #c084fc 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.mesh-bg {
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(99, 102, 241, 0.35), transparent),
+    radial-gradient(ellipse 60% 40% at 100% 0%, rgba(168, 85, 247, 0.2), transparent),
+    radial-gradient(ellipse 50% 30% at 0% 100%, rgba(59, 130, 246, 0.15), transparent);
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(ellipse 70% 70% at 50% 40%, black, transparent);
+}
+
+@keyframes float-particle {
+  0%,
+  100% {
+    transform: translateY(0) translateX(0);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateY(-24px) translateX(8px);
+    opacity: 0.8;
+  }
+}
+
+.particle {
+  animation: float-particle 8s ease-in-out infinite;
+}
+
+.particle-delay-1 {
+  animation-delay: -2s;
+}
+.particle-delay-2 {
+  animation-delay: -4s;
+}
+.particle-delay-3 {
+  animation-delay: -6s;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shimmer-bar {
+  background: linear-gradient(
+    90deg,
+    rgba(139, 92, 246, 0.15) 0%,
+    rgba(129, 140, 248, 0.35) 50%,
+    rgba(139, 92, 246, 0.15) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 3s ease infinite;
+}
