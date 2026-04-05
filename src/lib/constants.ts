@@ -7,8 +7,10 @@ export const SITE = {
   phone: "+91-9324115782",
 } as const;
 
-/** Served from `public/Prashin_More_2026.pdf` */
-export const RESUME_URL = "/Prashin_More_2026.pdf";
+const publicBasePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
+/** Served from `public/Prashin_More_2026.pdf` (prefixed on GitHub Pages). */
+export const RESUME_URL = `${publicBasePath}/Prashin_More_2026.pdf`;
 
 /** Google Doc (view / share) */
 export const RESUME_GOOGLE_DOC_URL =
