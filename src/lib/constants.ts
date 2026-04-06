@@ -67,6 +67,7 @@ export const SKILL_GROUPS = [
     title: "Databases",
     items: [
       { name: "PostgreSQL", level: 93 },
+      { name: "MongoDB", level: 88 },
       { name: "SQL", level: 95 },
     ],
   },
@@ -124,16 +125,6 @@ export const EXPERIENCE: readonly ExperienceEntry[] = [
 
 export const PROJECTS = [
   {
-    title: "Landing Page",
-    subtitle: "Portfolio-grade marketing surface",
-    description:
-      "A conversion-focused landing experience with motion-led storytelling, crisp typography, and performance budgets. Built to demonstrate UI craft, accessibility, and measurable engagement patterns.",
-    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    liveUrl: "https://web-dev-landing-page-phi.vercel.app/",
-    repoUrl: "https://github.com/PrashinMore",
-    accent: "from-violet-500/20 to-fuchsia-500/10",
-  },
-  {
     title: "Restaurant SaaS Dashboard",
     subtitle: "Multi-tenant operations product",
     description:
@@ -152,6 +143,16 @@ export const PROJECTS = [
     liveUrl: "https://solareasy.in/",
     repoUrl: "https://github.com/PrashinMore",
     accent: "from-amber-500/20 to-orange-500/10",
+  },
+  {
+    title: "Landing Page",
+    subtitle: "Portfolio-grade marketing surface",
+    description:
+      "A conversion-focused landing experience with motion-led storytelling, crisp typography, and performance budgets. Built to demonstrate UI craft, accessibility, and measurable engagement patterns.",
+    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    liveUrl: "https://web-dev-landing-page-phi.vercel.app/",
+    repoUrl: "https://github.com/PrashinMore",
+    accent: "from-violet-500/20 to-fuchsia-500/10",
   },
 ] as const;
 
