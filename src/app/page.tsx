@@ -66,7 +66,7 @@ export default function Home() {
         <Projects />
         <SystemDesign />
         <BlogPlaceholder />
-        <TestimonialsPlaceholder />
+        {/* <TestimonialsPlaceholder /> */}
         <Contact />
       </main>
       <Footer />
